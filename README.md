@@ -1,4 +1,4 @@
-# Thrift Definition for Axia Application
+# Thrift Definition for Sanskerta Project Application
 
 [![Thrift](https://img.shields.io/badge/Apache%20Thrift-0.9.3-yellow.svg)](https://thrift.apache.org/)
 [![License](https://img.shields.io/badge/license-MIT-44897A.svg)](https://github.com/dynastymasra/SanskertaThrift/blob/master/LICENSE)
