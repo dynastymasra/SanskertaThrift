@@ -1,9 +1,9 @@
 include "Exception.thrift"
 include "Value.thrift"
 
-namespace java com.twitter.finagle.axia.Country
+namespace java sanskerta.dynastymasra.area.contract
 namespace go sanskerta.contract.areas
-#@namespace scala com.twitter.finagle.axia.Country
+#@namespace scala sanskerta.dynastymasra.area.contract
 
 enum IsoAlphaCode {
     ALPHA2, ALPHA3
