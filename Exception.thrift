@@ -1,6 +1,6 @@
-namespace java com.twitter.finagle.axia.exception
 namespace go sanskerta.contract.exception
-#@namespace scala com.twitter.finagle.axia.exception
+namespace java sanskerta.dynastymasra.area.contract
+#@namespace scala sanskerta.dynastymasra.area.contract
 
 exception FailedConversionException {
     1: string description

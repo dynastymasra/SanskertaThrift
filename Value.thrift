@@ -1,6 +1,6 @@
-namespace java com.twitter.finagle.axia.value
 namespace go sanskerta.contract.value
-#@namespace scala com.twitter.finagle.axia.value
+namespace java sanskerta.dynastymasra.area.contract
+#@namespace scala sanskerta.dynastymasra.area.contract
 
 typedef string timestamp
 typedef string UUID
