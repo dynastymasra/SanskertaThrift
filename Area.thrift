@@ -1,8 +1,8 @@
 include "Exception.thrift"
 include "Value.thrift"
 
-namespace java sanskerta.dynastymasra.area.contract
-#@namespace scala sanskerta.dynastymasra.area.contract
+namespace java contract.area
+#@namespace scala contract.area
 namespace go sanskerta.contract.areas
 
 enum IsoAlphaCode {

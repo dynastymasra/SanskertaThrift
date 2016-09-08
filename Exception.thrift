@@ -1,6 +1,6 @@
 namespace go sanskerta.contract.exception
-namespace java sanskerta.dynastymasra.area.contract
-#@namespace scala sanskerta.dynastymasra.area.contract
+namespace java contract.exception
+#@namespace scala contract.exception
 
 exception FailedConversionException {
     1: string description
