@@ -17,3 +17,4 @@ migrate
 common
 gen-go
 gen-java
+target
