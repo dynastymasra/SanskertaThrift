@@ -1,8 +1,8 @@
 include "Exception.thrift"
 include "Value.thrift"
 
-namespace java contract.area
-#@namespace scala contract.area
+namespace java id.co.squarecode.common.contract.area
+#@namespace scala id.co.squarecode.common.contract.area
 namespace go sanskerta.contract.areas
 
 enum IsoAlphaCode {
@@ -10,7 +10,7 @@ enum IsoAlphaCode {
 }
 
 struct Country {
-    1: optional Value.UUID id
+    1: optional Value.UUID idCountry
     2: required string name
     3: required i32 callingCode
     4: required map<IsoAlphaCode, string> isoCode
@@ -24,7 +24,7 @@ service CountryService {
     Country createCountry(1: required Country Country) throws (1: Exception.DataAlreadyRegisteredException already,
         2: Exception.CommonException common, 3: Exception.FailedConversionException failed)
 
-    Country getCountryById(1: required Value.UUID id) throws (1: Exception.DataNotFoundException notFound,
+    Country getCountryById(1: required Value.UUID idCountry) throws (1: Exception.DataNotFoundException notFound,
         2: Exception.FailedConversionException convert, 3: Exception.CommonException common)
 
     Country getCountryByCallingCode(1: required i32 code) throws (1: Exception.DataNotFoundException notFound,
@@ -36,12 +36,12 @@ service CountryService {
     list<Country> getAllCountry() throws (1: Exception.DataNotFoundException notFound,
         2: Exception.CommonException common)
 
-    Country updateCountry(1: required Value.UUID id, 2: required Country Country) throws (1: Exception.DataNotFoundException notFound,
+    Country updateCountry(1: required Value.UUID idCountry, 2: required Country Country) throws (1: Exception.DataNotFoundException notFound,
         2: Exception.CommonException common, 3: Exception.FailedConversionException convert)
 
-    void softDeleteCountry(1: required Value.UUID id) throws (1: Exception.DataNotFoundException notFound,
+    void softDeleteCountry(1: required Value.UUID idCountry) throws (1: Exception.DataNotFoundException notFound,
         2: Exception.FailedConversionException convert, 3: Exception.CommonException common)
 
-    void removeCountry(1: required Value.UUID id) throws (1: Exception.DataNotFoundException notFound,
+    void removeCountry(1: required Value.UUID idCountry) throws (1: Exception.DataNotFoundException notFound,
         2: Exception.CommonException common, 3: Exception.FailedConversionException convert)
 }

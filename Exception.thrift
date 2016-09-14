@@ -1,6 +1,6 @@
 namespace go sanskerta.contract.exception
-namespace java contract.exception
-#@namespace scala contract.exception
+namespace java id.co.squarecode.common.contract.exception
+#@namespace scala id.co.squarecode.common.contract.exception
 
 exception FailedConversionException {
     1: string description
