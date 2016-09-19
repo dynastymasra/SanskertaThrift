@@ -18,8 +18,11 @@ struct Country {
     6: optional Value.timestamp updated
 }
 
-service CountryService {
+service AreaService {
     string ping()
+}
+
+service CountryService {
 
     Country createCountry(1: required Country Country) throws (1: Exception.DataAlreadyRegisteredException already,
         2: Exception.CommonException common, 3: Exception.FailedConversionException failed)
