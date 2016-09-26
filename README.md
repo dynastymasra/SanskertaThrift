@@ -3,7 +3,9 @@
 [![Thrift](https://img.shields.io/badge/thrift-0.9.3-yellow.svg)](https://thrift.apache.org/)
 [![License](https://img.shields.io/badge/license-MIT-44897A.svg)](https://github.com/dynastymasra/SanskertaThrift/blob/master/LICENSE)
 
-Thrift definition for `Sanskerta` project.
+Thrift definition for `Sanskerta` project. 
+
+implementation service used scala, finagle and scrooge in [Sanskerta Service](https://github.com/dynastymasra/SanskertaService)
 
 ## How To Install
 
