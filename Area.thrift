@@ -24,6 +24,9 @@ service AreaService {
 
 service CountryService {
 
+    Country create(1: required Country Country) throws (1: Exception.DataAlreadyRegisteredException already,
+        2: Exception.CommonException common, 3: Exception.FailedConversionException failed)
+
     Country createCountry(1: required Country Country) throws (1: Exception.DataAlreadyRegisteredException already,
         2: Exception.CommonException common, 3: Exception.FailedConversionException failed)
 
